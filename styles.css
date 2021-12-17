@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffe8d6;
+    /* overflow: hidden; */
+}
+
+nav {
+    /* background-color: #ffe8d6; */
+    display: flex;
+    color: #302f2e;
+    /* gap: 1em; */
+}
+
+nav h1 {
+    padding: 45px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-top: 50px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+}
+
+nav ul li a:hover {
+    opacity: 0.3;
+    transition: all 1s ease-in-out;
+}
+
+nav span {
+    padding-top: 50px;
+    opacity: 0.5;
+}
+
+#searchIcon {
+    padding-top: 45px;
+    padding-left: 24em;
+    display: flex;
+}
+
+.introSection {
+    /* display: flex;
+    align-items: center;
+    margin: auto; */
+    /* background-image: "assets/intro.jpeg";
+    background-position: center; */
+    /* width: 100px;
+    height: 70px; */
+    position: relative;
+    text-align: center;
+    margin-top: -4em;
+}
+.introSection img {
+    width: 79em;
+    padding: 47px;
+    height: 30em;
+}
+
+.introItem {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 3em;
+}
+
+.introItem h3 {
+    font-size: 25px;
+    color: #8f4510;
+}
+
+.btn {
+    background: #140d47;
+    background-image: linear-gradient(top, #140d47, #e8ba56);
+    background-image: linear-gradient(to bottom, #140d47, #e8ba56);
+    border-radius: 8px;
+    border: 0;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+/* .btn:focus {
+    outline: none;
+} */
+.btn:hover {
+    background: #f2d48a;
+    text-decoration: none;
+}
