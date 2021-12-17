@@ -47,10 +47,54 @@ nav span {
     opacity: 0.5;
 }
 
-#searchIcon {
+/* #searchIcon {
     padding-top: 45px;
     padding-left: 24em;
     display: flex;
+} */
+
+.searching {
+    position: relative;
+    margin-top: 2em;
+    margin-left: 22em;
+}
+
+.searching input {
+
+    width: 30px;
+    height: 40px;
+    padding: 1em;
+    border: none;
+    transition: width 0.3s ease;
+
+}
+input:focus {
+    outline: 0;
+}
+
+.searching button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 40px;
+    padding-left: 0.5em;
+    padding-right:1.5em;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: width 0.3s ease;
+    background-color:#ffe8d6
+}
+
+.searching.active input{
+    width: 250px;
+    background-color:  #140d47;
+    color:#ffe8d6
+}
+
+.searching.active button {
+    transform: translateX(250px);
 }
 
 .introSection {
@@ -86,19 +130,21 @@ nav span {
 
 @keyframes rollIn {
     0% {
-      letter-spacing: -0.5em;
-      transform: translateZ(-700px) translateY(-500px);
-      opacity: 0;
+        letter-spacing: -0.5em;
+        transform: translateZ(-700px) translateY(-500px);
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      transform: translateZ(0) translateY(0);
-      opacity: 1;
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
     }
 }
-  
+
 
 .introItem h3 {
     font-size: 25px;
@@ -121,43 +167,48 @@ nav span {
 
 @keyframes heartbeat {
     from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: center center;
-              transform-origin: center center;
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
+
     10% {
-      -webkit-transform: scale(0.91);
-              transform: scale(0.91);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
+
     17% {
-      -webkit-transform: scale(0.98);
-              transform: scale(0.98);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
+
     33% {
-      -webkit-transform: scale(0.87);
-              transform: scale(0.87);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
+
     45% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
-  }
+}
+
 /* .btn:focus {
     outline: none;
 } */
 .btn:hover {
-    background: #f2d48a;
+    background: #140d47;
     text-decoration: none;
 }
 
@@ -240,8 +291,9 @@ nav span {
 
 .about a:hover {
     opacity: 0.5;
-    transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out;
 }
+
 .about h4 {
     padding: 2em 0 1em 0;
     font-size: 20px;
@@ -260,7 +312,7 @@ nav span {
     /* width: 10em; */
 }
 
-.card img{
+.card img {
     height: 10em;
     width: 10em;
     transition: transform .5s;
