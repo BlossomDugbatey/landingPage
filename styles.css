@@ -171,7 +171,7 @@ nav span {
     font-size: 15px;
 }
 
-.catalog {
+.catalogue {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -181,12 +181,37 @@ nav span {
     margin-left: 50px;
 }
 
-.catalog img {
+.catalogue img {
     width: 17em;
     height: 15em;
 }
 
-.catalog p {
-    font-size: 13px;
+.catalogue p {
+    font-size: 14px;
+    padding-top: 1em;
+}
+
+.popular h5 {
+    padding-top: 63px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+
+.popularCatalogue img {
+    width: 17.5em;
+    height: 15em;
+}
+
+.popularCatalogue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 21px;
+    margin-right: 45px;
+    margin-left: 45px;
+}
+
+.popularCatalogue p {
+    font-size: 14px;
     padding-top: 1em;
 }
