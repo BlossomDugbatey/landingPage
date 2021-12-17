@@ -1,3 +1,5 @@
+// search display
+
 const search = document.querySelector(".searching");
 const btn = document.querySelector(".searchButton")
 const input = document.querySelector("input");
