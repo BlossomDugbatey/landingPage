@@ -263,6 +263,11 @@ nav span {
 .card img{
     height: 10em;
     width: 10em;
+    transition: transform .5s;
+}
+
+.card img:hover {
+    transform: scale(1.5);
 }
 
 /* .card img {
@@ -291,4 +296,8 @@ footer {
     /* justify-content: space-around; */
     gap: 2em;
     height: 5em;
+}
+
+footer p {
+    padding: 2em;
 }
