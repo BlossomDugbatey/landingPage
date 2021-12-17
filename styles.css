@@ -240,7 +240,7 @@ input:focus {
 }
 
 .about {
-    background-image: url('assets/background.svg');
+    background-color: #3A4257;
     background-position: cover;
     text-align: center;
     color: #d8c7bb;
